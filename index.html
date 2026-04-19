@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Colección Gomez — Arte · Velocidad · Pasión</title>
+<meta name="description" content="El primer museo de arte sobre capots. Una colección única de esculturas, arte sobre automóviles y el único Pagani Zonda en Argentina."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">
+      <span class="loader-c">C</span>
+      <span class="loader-g">G</span>
+    </div>
+    <div class="loader-line"><div class="loader-progress"></div></div>
+    <p class="loader-label">Colección Gomez</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#inicio" class="nav-logo">
+    <span class="logo-main">Colección</span>
+    <span class="logo-sub">Gomez</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#zonda">Zonda</a></li>
+    <li><a href="#capots">Capots</a></li>
+    <li><a href="#esculturas">Esculturas</a></li>
+    <li><a href="#biografia">Biografía</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#zonda" class="mm-link">Zonda</a></li>
+    <li><a href="#capots" class="mm-link">Capots</a></li>
+    <li><a href="#esculturas" class="mm-link">Esculturas</a></li>
+    <li><a href="#biografia" class="mm-link">Biografía</a></li>
+    <li><a href="#contacto" class="mm-link">Contacto</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <div class="hero-grain"></div>
+    <div class="hero-gradient"></div>
+    <!-- Geometric art lines -->
+    <svg class="hero-lines" viewBox="0 0 1440 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="300" x2="1440" y2="300" stroke="rgba(212,175,55,0.06)" stroke-width="1"/>
+      <line x1="0" y1="600" x2="1440" y2="600" stroke="rgba(212,175,55,0.04)" stroke-width="1"/>
+      <line x1="720" y1="0" x2="720" y2="900" stroke="rgba(212,175,55,0.05)" stroke-width="1"/>
+      <circle cx="720" cy="450" r="300" stroke="rgba(212,175,55,0.04)" stroke-width="1" fill="none"/>
+      <circle cx="720" cy="450" r="500" stroke="rgba(212,175,55,0.03)" stroke-width="1" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal-fade" style="--d:0.2s">
+      <span class="eyebrow-line"></span>
+      <span>Buenos Aires · Argentina</span>
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="h1-line reveal-line" style="--d:0.3s">El Arte</span>
+      <span class="h1-line h1-italic reveal-line" style="--d:0.5s">es Felicidad.</span>
+    </h1>
+
+    <p class="hero-sub reveal-fade" style="--d:0.8s">
+      El primer museo de arte sobre capots. Una colección única donde la velocidad se convierte en escultura y el lujo en emoción pura.
+    </p>
+
+    <div class="hero-actions reveal-fade" style="--d:1s">
+      <a href="#zonda" class="btn-gold magnetic">
+        Explorar la Colección
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+      <a href="#biografia" class="btn-outline">Conocer a Gomez</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator reveal-fade" style="--d:1.4s">
+    <div class="scroll-track">
+      <div class="scroll-thumb"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+
+  <!-- Floating label -->
+  <div class="hero-badge reveal-fade" style="--d:1.2s">
+    <span class="badge-num">01</span>
+    <span class="badge-text">Primer Pagani Zonda<br>en Latinoamérica</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-set">
+      Arte <span class="m-sep">✦</span> Velocidad <span class="m-sep">✦</span> Pasión <span class="m-sep">✦</span> Esculturas <span class="m-sep">✦</span> Pagani Zonda <span class="m-sep">✦</span> Capots <span class="m-sep">✦</span> Buenos Aires <span class="m-sep">✦</span> Mármol de Carrara <span class="m-sep">✦</span> Colección Privada <span class="m-sep">✦</span>
+    </div>
+    <div class="marquee-set" aria-hidden="true">
+      Arte <span class="m-sep">✦</span> Velocidad <span class="m-sep">✦</span> Pasión <span class="m-sep">✦</span> Esculturas <span class="m-sep">✦</span> Pagani Zonda <span class="m-sep">✦</span> Capots <span class="m-sep">✦</span> Buenos Aires <span class="m-sep">✦</span> Mármol de Carrara <span class="m-sep">✦</span> Colección Privada <span class="m-sep">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO SECTION -->
+<section class="intro-sec">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-left">
+        <p class="section-eyebrow scroll-reveal">El Coleccionista</p>
+        <h2 class="section-h2 scroll-reveal" style="--sd:0.1s">
+          Una vida vivida<br><em>diez veces.</em>
+        </h2>
+      </div>
+      <div class="intro-right scroll-reveal" style="--sd:0.2s">
+        <p class="intro-text">
+          "Lo que yo siento es que estoy viviendo 10 vidas. Me encanta la música, el arte, los autos, las joyas, los juegos de salón y muchas cosas más."
+        </p>
+        <p class="intro-author">— Jorge Gomez</p>
+        <a href="#biografia" class="text-link">Leer Biografía <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION FEATURES -->
+<section class="collection-sec" id="coleccion">
+  <div class="container">
+    <div class="sec-header">
+      <p class="section-eyebrow scroll-reveal">La Colección</p>
+      <h2 class="section-h2 scroll-reveal" style="--sd:0.1s">Tres mundos.<br><em>Una visión.</em></h2>
+    </div>
+
+    <!-- ZONDA -->
+    <div class="coll-item coll-item--left scroll-reveal" id="zonda">
+      <div class="coll-image">
+        <div class="coll-img-inner">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/6.jpg" alt="Pagani Zonda" loading="lazy"/>
+          <div class="coll-img-overlay"></div>
+        </div>
+        <div class="coll-label-float">Zonda</div>
+      </div>
+      <div class="coll-text">
+        <span class="coll-num">01</span>
+        <h3 class="coll-title">Pagani Zonda</h3>
+        <p class="coll-desc">
+          En el Salón de Ginebra 2005, un sueño se hizo realidad. Jorge fue el primer latinoamericano en adquirir un Pagani Zonda, directamente de manos de Horacio Pagani — también argentino. Una historia de visión, audacia y un instinto que nunca falla.
+        </p>
+        <div class="coll-tags">
+          <span>Pagani</span>
+          <span>2005</span>
+          <span>Ginebra</span>
+          <span>Único en Argentina</span>
+        </div>
+        <a href="https://colecciongomez.com/zonda/vista" class="btn-ghost-gold" target="_blank">
+          Ver Colección Zonda <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="coll-divider scroll-reveal"></div>
+
+    <!-- CAPOTS -->
+    <div class="coll-item coll-item--right scroll-reveal" id="capots">
+      <div class="coll-text">
+        <span class="coll-num">02</span>
+        <h3 class="coll-title">Capots de Arte</h3>
+        <p class="coll-desc">
+          Una idea única: 14 capots de Porsche GT2 intervenidos por artistas plásticos consagrados y emergentes. En 2011 fueron exhibidos en el mismísimo Museo Porsche en Stuttgart. Arte sobre velocidad — literalmente.
+        </p>
+        <div class="coll-tags">
+          <span>Porsche GT2</span>
+          <span>14 Artistas</span>
+          <span>Stuttgart 2011</span>
+          <span>Único en el Mundo</span>
+        </div>
+        <a href="https://colecciongomez.com/capots/vista" class="btn-ghost-gold" target="_blank">
+          Ver Colección Capots <span>→</span>
+        </a>
+      </div>
+      <div class="coll-image">
+        <div class="coll-img-inner">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/8.jpg" alt="Capots de Arte" loading="lazy"/>
+          <div class="coll-img-overlay"></div>
+        </div>
+        <div class="coll-label-float">Capots</div>
+      </div>
+    </div>
+
+    <div class="coll-divider scroll-reveal"></div>
+
+    <!-- ESCULTURAS -->
+    <div class="coll-item coll-item--left scroll-reveal" id="esculturas">
+      <div class="coll-image">
+        <div class="coll-img-inner">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/11.jpg" alt="Esculturas" loading="lazy"/>
+          <div class="coll-img-overlay"></div>
+        </div>
+        <div class="coll-label-float">Esculturas</div>
+      </div>
+      <div class="coll-text">
+        <span class="coll-num">03</span>
+        <h3 class="coll-title">Esculturas</h3>
+        <p class="coll-desc">
+          Todo comenzó con un catálogo de Pablo Atchugarry visto en el Armani Café. Un flechazo instantáneo que desató una colección de esculturas en mármol de Carrara que recorre el mundo. La primera: "Zonda" — un guiño del destino.
+        </p>
+        <div class="coll-tags">
+          <span>Pablo Atchugarry</span>
+          <span>Mármol de Carrara</span>
+          <span>Colección Mundial</span>
+        </div>
+        <a href="https://colecciongomez.com/esculturas/vista" class="btn-ghost-gold" target="_blank">
+          Ver Esculturas <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section class="stats-band">
+  <div class="stats-grain"></div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block scroll-reveal" style="--sd:0s">
+        <div class="stat-val">2005</div>
+        <div class="stat-desc">Primer Zonda<br>en Latinoamérica</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block scroll-reveal" style="--sd:0.1s">
+        <div class="stat-val">14</div>
+        <div class="stat-desc">Artistas en<br>Colección Capots</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block scroll-reveal" style="--sd:0.2s">
+        <div class="stat-val">2011</div>
+        <div class="stat-desc">Exposición Museo<br>Porsche Stuttgart</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block scroll-reveal" style="--sd:0.3s">
+        <div class="stat-val">01</div>
+        <div class="stat-desc">Primer Museo de Arte<br>sobre Capots del Mundo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIOGRAFIA -->
+<section class="bio-sec" id="biografia">
+  <div class="container">
+    <div class="bio-grid">
+      <div class="bio-image scroll-reveal">
+        <div class="bio-img-wrap">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/frentemuseo.jpg" alt="Jorge Gomez" loading="lazy"/>
+          <div class="bio-img-overlay"></div>
+        </div>
+        <div class="bio-img-label">El Museo</div>
+      </div>
+      <div class="bio-content">
+        <p class="section-eyebrow scroll-reveal">Biografía</p>
+        <h2 class="section-h2 scroll-reveal" style="--sd:0.1s">
+          De techo de<br>cartón al<br><em>mundo entero.</em>
+        </h2>
+        <div class="bio-quote scroll-reveal" style="--sd:0.2s">
+          <p>"Mi primera casa fue una prefabricada con techo de cartón. Mi mamá todos los días me decía: Jorgito sos inteligente, sos capaz y todo lo que te propongas en la vida lo vas a lograr."</p>
+        </div>
+        <p class="bio-text scroll-reveal" style="--sd:0.3s">
+          Una historia de determinación, pasión y una visión única del mundo. Jorge Gomez construyó su vida convirtiendo los sueños más audaces en realidades tangibles: desde el Pagani Zonda hasta los capots de Porsche exhibidos en Stuttgart.
+        </p>
+        <a href="https://colecciongomez.com/biografia/vista" class="btn-gold scroll-reveal magnetic" style="--sd:0.4s" target="_blank">
+          Leer Biografía Completa
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICIAS PREVIEW -->
+<section class="news-sec" id="noticias">
+  <div class="container">
+    <div class="sec-header news-header">
+      <div>
+        <p class="section-eyebrow scroll-reveal">Noticias</p>
+        <h2 class="section-h2 scroll-reveal" style="--sd:0.1s">Es negocio<br><em>ser bueno.</em></h2>
+      </div>
+      <a href="https://colecciongomez.com/noticias/vista" class="btn-outline-sm scroll-reveal" style="--sd:0.2s" target="_blank">
+        Ver todas las noticias →
+      </a>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card scroll-reveal" style="--sd:0s">
+        <div class="news-img">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/5.jpg" alt="Noticias" loading="lazy"/>
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Coleccionismo</span>
+          <h3 class="news-title">Una mirada excéntrica siguiendo a la intuición</h3>
+          <a href="https://colecciongomez.com/noticias/vista" class="news-link" target="_blank">Leer más →</a>
+        </div>
+      </div>
+      <div class="news-card scroll-reveal" style="--sd:0.1s">
+        <div class="news-img">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/10.jpg" alt="Bienestar" loading="lazy"/>
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Emprendimiento</span>
+          <h3 class="news-title">Incentivar a los emprendedores: la misión de Jorge</h3>
+          <a href="https://colecciongomez.com/noticias/vista" class="news-link" target="_blank">Leer más →</a>
+        </div>
+      </div>
+      <div class="news-card scroll-reveal" style="--sd:0.2s">
+        <div class="news-img">
+          <img src="https://colecciongomez.com/js/plugins/revolution/assets/images/2.jpg" alt="Arte" loading="lazy"/>
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Arte</span>
+          <h3 class="news-title">Arte sobre ruedas: cuando la pasión no tiene límites</h3>
+          <a href="https://colecciongomez.com/noticias/vista" class="news-link" target="_blank">Leer más →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact-sec" id="contacto">
+  <div class="contact-bg">
+    <div class="contact-grain"></div>
+  </div>
+  <div class="container">
+    <div class="contact-inner">
+      <p class="section-eyebrow scroll-reveal" style="color: rgba(212,175,55,0.7)">Contacto</p>
+      <h2 class="section-h2 contact-h2 scroll-reveal" style="--sd:0.1s">
+        ¿Querés conocer<br><em>la Colección?</em>
+      </h2>
+      <p class="contact-sub scroll-reveal" style="--sd:0.2s">
+        Visitá el sitio oficial o ponete en contacto para consultas sobre la colección, visitas privadas y colaboraciones.
+      </p>
+      <div class="contact-actions scroll-reveal" style="--sd:0.3s">
+        <a href="https://colecciongomez.com/contacto/vista" class="btn-gold magnetic" target="_blank">
+          Enviar un Mensaje
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="https://colecciongomez.com" class="btn-white-outline" target="_blank">
+          Sitio Oficial
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">
+        <span class="foot-logo-main">Colección</span>
+        <span class="foot-logo-sub">Gomez</span>
+      </div>
+      <nav class="foot-nav">
+        <a href="https://colecciongomez.com/zonda/vista" target="_blank">Zonda</a>
+        <a href="https://colecciongomez.com/capots/vista" target="_blank">Capots</a>
+        <a href="https://colecciongomez.com/esculturas/vista" target="_blank">Esculturas</a>
+        <a href="https://colecciongomez.com/noticias/vista" target="_blank">Noticias</a>
+        <a href="https://colecciongomez.com/historieta/vista" target="_blank">Historieta</a>
+        <a href="https://colecciongomez.com/biografia/vista" target="_blank">Biografía</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-copy">© 2025 Colección Gomez — Todos los Derechos Reservados.</p>
+      <p class="foot-tagline"><em>El Arte es Felicidad.</em></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
